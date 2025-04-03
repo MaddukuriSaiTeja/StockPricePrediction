@@ -1,0 +1,56 @@
+1. Importing the packages
+2. Exploring the dataset 
+	- Stock Tweets
+ 	- Signle Stock Data
+	- All stock data(Multi Source data)
+3. Data processing & Data Cleaning
+	- For Tweets Sentiment
+		- Cleaning the Tweets
+			- Remove Punctuations
+			- Remove HTML
+			- Remove URL and emojis
+		- Encoding & Tokeization the Tweets
+			- Keras Tokenizer
+	- For Stock Price
+		- Pandas dataframe
+		- Keras reshaping the data		
+4. Visualization using seaborn & matplotlib
+5. Splitting the data to train and test
+6. Building the model
+	- For Tweets Sentiment
+	    	- MLP
+		- CNN
+		- LSTM
+		- MS-LSTM (Multi Source Data)
+		- MS - SSA - LSTM (Multi Soucre - SSA optimizer)
+		- Voting Classifier
+		- LSTM + GRU
+	- For Stock Price
+		- MLP
+		- CNN
+		- LSTM
+		- MS-LSTM (Multi Source Data)
+		- MS - SSA - LSTM (Multi Soucre - SSA optimizer)
+		- Voting Regression
+   
+7. training and building the model 
+
+Flask Framework
+=----------------
+
+8. Flask Framework with Sqlite for signup and signin
+9. importing the packages
+10. User gives input as Symbol of crytocurrencty
+11. the given input is preprocessed and the data regarding cryto is scraped based yahoo finance 
+12. with all this informtion, the define LSTM+GRU and Voting Regerssion model and ARIMA is used for prediction
+14. final outcome is displayed through frontend
+
+
+
+Extension
+----------
+
+In the base paper the author mentioned to use different technique for analysis the dataset with Machine learning models, like MS-SSA-LSTM model for analysis the stock price and sentiment,
+As an extension we applied an ensemble method  combining the predictions of multiple individual models to produce a more robust and accurate final prediction. 
+However, we can further enhance the performance by exploring other ensemble techniques such as Voting  Classifier and LSTM + GRU for sentiment of stock and got 100% accuracy, where for stock price we used Voting Regression which got 99% R2 SCore,
+As an extension we can build the front end using the flask framework for user testing and with user authentication.
